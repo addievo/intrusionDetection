@@ -203,7 +203,7 @@ weighted avg       0.00      0.01      0.00     22544
 
 Displaying graphs...
 ```
-![Graph 1](https://i.imgur.com/koB7Owm.png))
+![Graph 1](https://i.imgur.com/koB7Owm.png)
 
 
 ## About the Author
