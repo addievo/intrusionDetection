@@ -1,5 +1,15 @@
 # Intrusion Detection System
 
+- [Project Description](#project-description)
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+- [Usage](#usage)
+- [Output](#output)
+  - [model.py](#modelpy)
+  - [cli.py](#clipy)
+- [About the Author](#about-the-author)
+- [License](#license)
+
 This project implements an Intrusion Detection System (IDS) using machine learning techniques. It aims to detect and classify network intrusions or anomalous activities in a computer network.
 
 ## Project Description
