@@ -46,13 +46,13 @@ python cli.py [--load_data] [--train] [--save_model] [--load_model] [--predict] 
 ```
 Choose the desired options by including the respective command-line arguments:
 
---load_data: Load the data.
---train: Train the model.
---save_model: Save the model.
---load_model: Load the model.
---predict: Perform predictions.
---display_graphs: Display graphs.
---load_test_data: Load test data (added option).
+--load_data: Load the data.\\
+--train: Train the model.\\
+--save_model: Save the model.\\
+--load_model: Load the model.\\
+--predict: Perform predictions.\\
+--display_graphs: Display graphs.\\
+--load_test_data: Load test data (added option).\\
 
 ##For Example
 ```
