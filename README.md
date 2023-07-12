@@ -28,7 +28,7 @@ You can install the dependencies using the following command:
 
 ```shell
 pip install pandas numpy scikit-learn matplotlib seaborn
-
+```
 ## Usage
 
 To use the Intrusion Detection System CLI, follow these steps:
@@ -43,7 +43,7 @@ To use the Intrusion Detection System CLI, follow these steps:
 
 ```shell
 python cli.py [--load_data] [--train] [--save_model] [--load_model] [--predict] [--display_graphs] [--load_test_data]
-
+```
 Choose the desired options by including the respective command-line arguments:
 
 --load_data: Load the data.
@@ -55,9 +55,9 @@ Choose the desired options by including the respective command-line arguments:
 --load_test_data: Load test data (added option).
 
 ##For Example
-
+```
 python cli.py --load_model --load_test_data --predict --display_graphs
-
+```
 Follow the prompts and instructions provided by the CLI to interact with the system and perform the desired actions.
 
 Note: You can choose one or more options at a time based on your 
