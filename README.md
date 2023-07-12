@@ -60,7 +60,7 @@ Choose the desired options by including the respective command-line arguments:
 
 --load_test_data: Load test data (added option).
 
-##For Example
+## Usage Example
 ```
 python cli.py --load_model --load_test_data --predict --display_graphs
 ```
@@ -69,10 +69,10 @@ Follow the prompts and instructions provided by the CLI to interact with the sys
 Note: You can choose one or more options at a time based on your 
 requirements.
 
-License
+## License
 This project is licensed under the MIT License.
 
-About the Author
+## About the Author
 This project is developed by Aditya Varma. I am currently pursuing a Bachelor's degree in Computer Science at the University of Wollongong, majoring in Cybersecurity and AI/Big Data. This project serves as a portfolio project showcasing my skills and interests in the field of intrusion detection and machine learning.
 
 For more information, you can contact me at adityavo@icloud.com.
