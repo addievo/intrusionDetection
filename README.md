@@ -4,7 +4,17 @@ This project implements an Intrusion Detection System (IDS) using machine learni
 
 ## Project Description
 
-The Intrusion Detection System consists of two main components: the CLI (Command-Line Interface) and the machine learning model. The CLI provides a user-friendly interface to interact with the system, including options to load data, train the model, save and load the model, perform predictions, and display graphs. The machine learning model is built using the Random Forest Classifier algorithm to classify network traffic as normal or anomalous.
+The IDS is designed to work with training data rather than live data from the system NIC. It utilizes the KDDCup'99 dataset, which is a widely used benchmark dataset for evaluating intrusion detection systems. 
+
+The system consists of two main components: the command-line interface (CLI) and the model.
+
+The CLI allows users to perform various actions such as loading the data, training the model, saving and loading the model, making predictions, and displaying graphs. 
+
+It provides a convenient way to interact with the IDS and perform different tasks based on the user's requirements.
+
+The model component uses a Random Forest Classifier algorithm for training and predicting network intrusions.
+
+It preprocesses the data by encoding categorical features, applying imputation for missing values, and scaling the features. The trained model can then be used to make predictions on new test data.
 
 ## Project Structure
 
@@ -73,7 +83,7 @@ requirements.
 ## Output
 
 ### Model.py
-
+```
 The output of running `model.py` is as follows:
 
           precision    recall  f1-score   support
@@ -120,13 +130,13 @@ feature importance
 29 diff_srv_rate 0.044063
 38 dst_host_srv_serror_rate 0.042351
 22 count 0.039756
-
+```
 
 ### Cli.py
 
 The output of running `cli.py` with the provided command-line arguments is as follows:
 
-Model loaded.
+```Model loaded.
 Loading the model...
 Loading the test dataset...
 Shape of X_test: (22544, 41)
@@ -135,19 +145,81 @@ Performing predictions...
 Predictions completed.
 [9 9 11 ... 11 11 9]
 
-Classification Report:
-precision recall f1-score support
-...
-...
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       737
+           1       0.00      0.00      0.00       359
+           2       0.00      0.00      0.00        20
+           3       0.00      0.00      0.00         3
+           4       0.00      0.00      0.00      1231
+           5       0.00      0.00      0.00       133
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00       141
+           8       0.00      0.00      0.00         7
+           9       0.00      0.00      0.00         2
+          10       0.00      0.00      0.00       293
+          11       0.02      0.29      0.04       996
+          12       0.00      0.00      0.00        18
+          13       0.00      0.00      0.00        17
+          14       0.00      0.00      0.00      4657
+          15       0.00      0.00      0.00        73
+          16       0.00      0.00      0.00      9711
+          17       0.00      0.00      0.00         2
+          18       0.00      0.00      0.00         2
+          19       0.00      0.00      0.00        41
+          20       0.00      0.00      0.00       157
+          21       0.00      0.00      0.00       685
+          22       0.00      0.00      0.00        15
+          23       0.00      0.00      0.00        13
+          24       0.00      0.00      0.00       319
+          25       0.00      0.00      0.00       735
+          26       0.00      0.00      0.00        14
+          27       0.00      0.00      0.00       665
+          28       0.00      0.00      0.00       178
+          29       0.00      0.00      0.00       331
+          30       0.00      0.00      0.00         2
+          31       0.00      0.00      0.00        12
+          32       0.00      0.00      0.00         2
+          33       0.00      0.00      0.00       944
+          34       0.00      0.00      0.00         2
+          35       0.00      0.00      0.00         9
+          36       0.00      0.00      0.00         4
+          37       0.00      0.00      0.00        13
+
+    accuracy                           0.01     22544
+   macro avg       0.00      0.01      0.00     22544
+weighted avg       0.00      0.01      0.00     22544
+
 
 Displaying graphs...
+```
+![Graph 1](https://i.imgur.com/koB7Owm.png))
 
-![Graph 1](https://imgur.com/a/kAYjqgK)
-
-## License
-This project is licensed under the MIT License.
 
 ## About the Author
 This project is developed by Aditya Varma. I am currently pursuing a Bachelor's degree in Computer Science at the University of Wollongong, majoring in Cybersecurity and AI/Big Data. This project serves as a portfolio project showcasing my skills and interests in the field of intrusion detection and machine learning.
 
 For more information, you can contact me at adityavo@icloud.com.
+
+## License
+
+Copyright (c) 2021-2023 Aditya Varma
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
